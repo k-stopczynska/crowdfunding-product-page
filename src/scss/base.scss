@@ -1,0 +1,139 @@
+@use "utilities" as *;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: none;
+}
+.modals {
+  display: none;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  @include flex-column-center;
+  background: url(../../images/image-hero-mobile.jpg) top center no-repeat;
+  background-size: contain;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  @include flex-row-space-between;
+  padding: 2em 1.5em;
+  background: transparent;
+}
+
+.container {
+  @include flex-column-center;
+  padding-top: 190px;
+  background: white;
+}
+
+.header-wrapper {
+  background-color: white;
+  text-align: center;
+  padding-top: 2rem;
+  img {
+    position: absolute;
+    top: 26%;
+    left: 45%;
+  }
+  h1 {
+    padding: 1em;
+  }
+  p {
+    padding-bottom: 2em;
+  }
+  .button-wrapper {
+    @include flex-row-space-between;
+  }
+  #bookmark-button {
+    background-image: url(../../images/icon-bookmark.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  #main-button {
+    padding: 1em 3em;
+  }
+}
+
+.statistics {
+  list-style: none;
+  @include flex-column-center;
+  .statistics-item:nth-child(2) {
+    border-top: 1px solid $dark-gray;
+    border-bottom: 1px solid $dark-gray;
+    padding: 0.5em 0;
+  }
+  .statistics-item:nth-child(1) {
+    padding-bottom: 0.5em;
+  }
+  .statistics-item:nth-child(3) {
+    padding: 0.5em 0;
+  }
+  .statistics-item {
+    @include flex-column-center;
+    line-height: 1.5;
+  }
+}
+
+.progres-bar-container {
+    width: 100%;
+    height: 10px;
+    background: lightgray;
+    border-radius: $border-button;
+    .progres-bar {
+        background: $moderate-cyan;
+        border-radius: $border-button;
+        height: 10px;
+        width: 80%;
+        opacity: 1;
+    }
+ }
+
+.section-paragraph:first-of-type {
+    padding: 1.5em 0;
+}
+
+.section-paragraph:last-of-type {
+    padding-bottom: 1.5em;
+}
+
+.reward-title {
+    @include flex-column-left;
+}
+
+.reward-paragraph {
+    padding: 1em 0;
+}
+
+.reward-items-left {
+    display: flex;
+    align-items: center;
+    padding-bottom: .5em;
+    span {
+        padding-left: .5em;
+    }
+}
+
+#stock-wrapper{
+    opacity: .3;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

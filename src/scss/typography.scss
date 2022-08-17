@@ -1,0 +1,57 @@
+@use "utilities" as *;
+
+body {
+    font-family: $font-family;
+}
+
+.button {
+    color: white;
+    font-size: 12px;
+}
+
+#main-button {
+    font-size: 16px;
+    font-weight: $font-bold;
+}
+
+h1 {
+    font-size: $font-main-heading;
+    font-weight: $font-bold;
+}
+
+p {
+    font-size: $font-para-mobile-size;
+    color: $dark-gray;
+    font-weight: $font-regular;
+}
+
+.statistics-item {
+    font-size: $font-statistics-item;
+    font-weight: $font-bold;
+    span {
+        font-size: $font-para-mobile-size;
+        font-weight: $font-regular;
+        color: $dark-gray;
+    }
+}
+
+.section-title {
+    font-size: $font-section-title-size;
+}
+
+.reward-title {
+    font-size: $font-reward-title-size;
+    line-height: 1.5;
+    span {
+        color: $moderate-cyan;
+        font-size: $font-para-mobile-size;
+    }
+}
+
+.reward-items-left {
+    font-size: $font-statistics-item;
+    span {
+        font-size: $font-para-mobile-size;
+        color: $dark-gray;
+    }
+}

@@ -1,0 +1,61 @@
+/*FONTS*/
+/*COLORS*/
+/*BORDERS*/
+/*MIXINS*/
+body {
+  font-family: "Commissioner", sans-serif;
+}
+
+.button {
+  color: white;
+  font-size: 12px;
+}
+
+#main-button {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.9rem;
+  color: hsl(0deg, 0%, 48%);
+  font-weight: 400;
+}
+
+.statistics-item {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.statistics-item span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: hsl(0deg, 0%, 48%);
+}
+
+.section-title {
+  font-size: 1.2rem;
+}
+
+.reward-title {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.reward-title span {
+  color: hsl(176deg, 50%, 47%);
+  font-size: 0.9rem;
+}
+
+.reward-items-left {
+  font-size: 2rem;
+}
+.reward-items-left span {
+  font-size: 0.9rem;
+  color: hsl(0deg, 0%, 48%);
+}
+
+/*# sourceMappingURL=typography.css.map */

@@ -1,0 +1,29 @@
+@use "utilities" as *;
+
+.wrapper,
+.reward-wrapper {
+    width: 90%;
+    padding: 2em 1em;
+    border: 1px solid transparent;
+    box-shadow: 0px 1px 15px lightgray;
+    border-radius: $border-section;
+    margin-bottom: 1.5em;
+}
+.reward-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.button {
+    background: $moderate-cyan;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: $border-button;
+}
+
+.stock-button {
+    background: $dark-gray;
+}
