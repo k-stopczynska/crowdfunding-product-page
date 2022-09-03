@@ -9,6 +9,16 @@ body {
     font-size: 12px;
 }
 
+#bookmark-button-secondary {
+    font-size: 16px;
+    color: $dark-gray;
+    font-weight: bold;
+}
+
+#bookmark-button-secondary.active {
+    color: $dark-cyan;
+}
+
 #main-button {
     font-size: 16px;
     font-weight: $font-bold;
@@ -24,6 +34,14 @@ p {
     color: $dark-gray;
     font-weight: $font-regular;
 }
+
+a {
+    color: $black;
+    @include md {
+        color: white;
+    }
+}
+
 
 .statistics-item {
     font-size: $font-statistics-item;

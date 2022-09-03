@@ -8,6 +8,10 @@
     box-shadow: 0px 1px 15px lightgray;
     border-radius: $border-section;
     margin-bottom: 1.5em;
+    @include md {
+        width: 50%;
+        padding: 2em;
+    }
 }
 .reward-wrapper {
     margin: 0 auto;
@@ -16,14 +20,86 @@
     margin-bottom: 1.5em;
 }
 
+.reward-wrapper.active {
+    border: 2px solid $moderate-cyan;
+}
+
 .button {
     background: $moderate-cyan;
     color: white;
     padding: 1em 2em;
     border: none;
     border-radius: $border-button;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: $dark-cyan;
+}
+
+
+
+#bookmark-button {
+    background-image: url(../../images/icon-bookmark.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    @include lg {
+      display: none;
+    }
+  }
+
+  #bookmark-button-secondary {
+    display: none;
+    @include lg {
+    background-image: url(../../images/icon-bookmark.svg);
+    background-color: lightgray;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1em 1em 1em 4em;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    }
+}
+
+.filter {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    opacity:.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+.bookmark.active {
+  position: relative;
+  .filter {
+    background-color: $dark-cyan;
+  }
+}
+
+  #main-button {
+    padding: 1em 3em;
+  }
+
+.amouunt {
+    border: 1px solid lightgray;
+    border-radius: $border-button;
+    width: 6em;
+    padding-left: 2em;
+    background-image: url(../../images/dollar-symbol.png);
+    background-repeat: no-repeat;
+    background-position: .8em center;
+    background-size: 1em;
 }
 
 .stock-button {
     background: $dark-gray;
+    pointer-events: none;
 }

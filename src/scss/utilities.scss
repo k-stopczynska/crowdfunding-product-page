@@ -23,7 +23,47 @@ $dark-gray: hsl(0, 0%, 48%);
 $border-button: 30px;
 $border-section: 5px;
 
+/*BREAKPOINTS*/
+$breakpoints: (
+'xs': 0,
+'s': 480px,
+'md':720px,
+'lg':960px,
+'xl':1200px
+);
+
+
+
 /*MIXINS*/
+@mixin xs {
+    @media(min-width: map-get($breakpoints, 'xs')) {
+        @content;
+    }
+}
+
+@mixin s {
+    @media(min-width: map-get($breakpoints, 's')) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media(min-width: map-get($breakpoints, 'md')) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media(min-width: map-get($breakpoints, 'lg')) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media(min-width: map-get($breakpoints, 'xl')) {
+        @content;
+    }
+}
 
 @mixin flex-column-center {
 display: flex;
